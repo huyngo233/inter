@@ -11,11 +11,12 @@
 ?>
 
 <div class="row header">
-  <div class="col-lg-6">
+  <div class="col-lg-1 col-md-1 col-sm-1"></div>
+  <div class="col-lg-5 col-md-5 col-sm-5">
     <a href="<?=get_home_url()?>">
       <?=get_post(51)->post_content?>
     </a></div>
-  <div class="col-lg-6">
+  <div class="col-lg-5 col-md-5 col-sm-5">
     <?php if ( has_nav_menu( 'primary' ) ) : ?>
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <?php
@@ -28,6 +29,8 @@
       </nav><!-- .main-navigation -->
     <?php endif; ?>
   </div>
+  <div class="col-lg-1 col-md-1 col-sm-1"></div>
+  <div class="clearfix"></div>
 </div>
 
 

@@ -1,7 +1,18 @@
 body {
+  height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: ProximaNova, sans-serif;
+  font-family: NunitoSans;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
 .row {
@@ -9,26 +20,146 @@ body {
   padding: 0;
 }
 
+.header {
+  margin: 10px 0;
+}
+
+.second-container {
+  padding: 40px 0;
+}
+
+/* MENU */
+
 ul#menu-main-menu {
+  margin: 0;
   list-style-type: none;
   text-align: center;
   display: inline-block;
+  /*color: #545454;*/
+  text-transform: uppercase;
 }
 
 #site-navigation {
+  margin-top: 15px;
   text-align: center;
 }
 
 ul#menu-main-menu li {
-
+  float: left;
 }
 
-#menu-main-menu a {
+ul#menu-main-menu li a {
 
+  padding: 7px 15px;
+  vertical-align: middle;
+  margin: 0px 25px;
+  color: #545454;
+  text-decoration: none;
 }
 
-#menu-main-menu a:hover {
+ul#menu-main-menu li a:hover {
+  border-radius: 5px;
+  background-color: #1a70a6;
+  color: #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
+ul#menu-main-menu .active {
+  color: #1a70a6;
+}
+
+/* end menu */
+
+.bg-background, .bg-caption {
+  padding: 0;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+  height: 500px;
+}
+
+.bg-caption {
+  position: relative;
+}
+
+.bg-caption-box {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  left: 15%;
+}
+
+.bg-caption-box h4 {
+  font-size: 36px;
+  text-align: center;
+  color: #1a70a6;
+}
+
+.bg-caption-box .caption-explain {
+  margin-top: 50px;
+  font-size: 25px;
+  color: #757575;
+  text-align: center;
+}
+
+.bg-separate {
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 2px solid #545454;
+}
+
+.vestibulum, .donec {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #545454;
+}
+
+.vestibulum .product {
+  text-align: center;
+}
+
+.donec {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donec article {
+  font-size: 18px;
+  color: #757575;
+}
+
+.donec input {
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #1a70a6;
+}
+
+.habitasse.bg-image {
+  height: 650px;
+}
+
+.habitasse-caption {
+  width: 25%;
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+  right: 10%;
+  top: 35%;
 }
 
 .left {
