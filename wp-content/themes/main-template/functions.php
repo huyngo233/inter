@@ -84,6 +84,7 @@ function maintemplate_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu',      'maintemplate' ),
 		'social'  => __( 'Social Links Menu', 'maintemplate' ),
+		'sitemap'  => __( 'Site Map Menu', 'maintemplate' ),
 	) );
 
 	/*
