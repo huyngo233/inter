@@ -53,11 +53,16 @@
 
     <div class="container-fluid second-container">
       <div class="platform txtcenter">
+        <h2><?=get_cat_name(9)?></h2>
         <div class="row">
-<!--        <h2>--><?//=get_cat_name()?><!--</h2>-->
-          <div class="col-lg-4 col-md-4 col-sm4"></div>
-          <div class="col-lg-4 col-md-4 col-sm4"></div>
-          <div class="col-lg-4 col-md-4 col-sm4"></div>
+          <?php
+            $myposts = _getAllPostByCate(9);
+            foreach ($myposts as $post) {
+              print "<div class=\"col-lg-4 col-md-4 col-sm4\">";
+              print $post->post_content;
+              print "</div>";
+            }
+          ?>
           <div class="clearfix"></div>
         </div>
         <input type="button" class="btn btn-info" value="learn more about platform">

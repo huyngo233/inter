@@ -12,7 +12,7 @@
 
 <div class="container-fluid main-container pagewidth">
   <?php get_mainmenu()?>
-  <div class="row" style="border: 1px solid #ccc;">
+  <div class="row" <?=(!is_page()) ? 'style="border: 1px solid #ccc;"' : ''?>>
     <?php
       if (!is_page()) {
         $imgBg = _getPostFeaturedImg(1);
@@ -28,11 +28,17 @@
           <p class="caption-explain"><?=$post->post_content?></p>
         </div>
       </div>
-      <div class="clearfix"></div>
-    <?php } else { ?>
 
-
+    <?php
+      } else {
+        $pageImg  = get_post(106)->post_content;
+        $imgBg    = _getPostFeaturedImg(get_the_ID());
+        if ($imgBg) {
+          print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$imgBg}')\"></div>";
+        }
+    ?>
     <?php } ?>
+    <div class="clearfix"></div>
   </div>
 </div>
 
