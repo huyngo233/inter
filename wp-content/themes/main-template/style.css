@@ -282,7 +282,77 @@ h2 {
 ul.cnss-social-icon {
   margin-top: 5px;
 }
-  /*END FOOTER*/
+/*END FOOTER*/
+
+/*PAGE*/
+#primary {
+  padding: 60px 0;
+}
+
+#primary #content-page {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#primary #content-page .title {
+  font-size: 24px;
+}
+
+#primary #content-page .infor-title {
+  font-size: 18px;
+  color: #545454;
+}
+
+#primary #content-page .infor-detail {
+  font-size: 16px;
+  color: #757575;
+}
+
+#primary #content-page .contact-form label {
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #545454;
+}
+
+#primary #content-page .contact-form input[type='text'],
+#primary #content-page .contact-form input[type='email'],
+#primary #content-page .contact-form input[type='tel'] {
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+
+#primary #content-page .contact-form textarea {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+
+#primary #content-page .contact-form .seperate {
+  margin-top: 10px;
+}
+
+#primary #content-page .contact-form #submit-contact {
+  margin: 20px 15px;
+  text-transform: uppercase;
+  padding: 8px 100px;
+  border-radius: 4px;
+  background-color: #1a70a6;
+}
+
+#primary #content-page .maps h2 {
+  font-size: 36px;
+  color: #545454;
+}
+
+#primary #content-page .maps iframe {
+  width: 100%;
+  height: 450px;
+}
+
+/*END PAGE*/
 .left {
   float: left;
 }
@@ -354,6 +424,9 @@ ul.cnss-social-icon {
   padding-left: 40px;
 }
 
+.pd60 {
+  padding: 60px 0;
+}
 
 @font-face {
   font-family: 'NunitoSans';
