@@ -6363,6 +6363,11 @@ function _filter_query_attachment_filenames( $clauses ) {
 	return $clauses;
 }
 
+/**
+ * @param $aCateId
+ * @param array $aParams
+ * @return array
+ */
 function _getAllPostByCate($aCateId, $aParams = array('orderby' => 'ID', 'order' => 'ASC')) {
 
   $args = array('category' => $aCateId);

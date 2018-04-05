@@ -84,7 +84,11 @@ function maintemplate_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu',      'maintemplate' ),
 		'social'  => __( 'Social Links Menu', 'maintemplate' ),
-		'sitemap'  => __( 'Site Map Menu', 'maintemplate' ),
+		'footer'  => __( 'Footer Menu', 'maintemplate' ),
+		'sitemap1'  => __( 'Site Map Menu - Products', 'maintemplate' ),
+		'sitemap2'  => __( 'Site Map Menu - Support', 'maintemplate' ),
+		'sitemap3'  => __( 'Site Map Menu - Market Place', 'maintemplate' ),
+		'sitemap4'  => __( 'Site Map Menu - About', 'maintemplate' ),
 	) );
 
 	/*
