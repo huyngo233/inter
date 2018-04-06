@@ -440,6 +440,8 @@ function special_nav_class ($classes, $item) {
  *
  * @since Twenty Fifteen 1.0
  */
+require get_template_directory() . '/common_globals.php';
+
 require get_template_directory() . '/inc/custom-header.php';
 
 /**

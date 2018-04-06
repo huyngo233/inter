@@ -16,10 +16,10 @@
     <?php get_bodyheader(true);?>
 
     <div class="container-fluid second-container">
-      <h2><?=get_post(21)->post_title;?></h2>
+      <h2><?=get_post(VESTIBULUM_POST_ID)->post_title;?></h2>
       <div class="row vestibulum">
         <?php
-          $post = get_post(21)->post_content;
+          $post = get_post(VESTIBULUM_POST_ID)->post_content;
           $images = explode("\r\n", $post);
 
           foreach ($images as $img) {
@@ -37,26 +37,26 @@
 
     <div class="container-fluid second-container">
       <div class="donec">
-        <h2><?=get_post(23)->post_title;?></h2>
-        <article><?=get_post(23)->post_content?></article>
+        <h2><?=get_post(DONEC_POST_ID)->post_title;?></h2>
+        <article><?=get_post(DONEC_POST_ID)->post_content?></article>
 
         <input type="button" class="btn btn-info" value="request a demo">
       </div>
     </div>
 
     <div class="container-fluid second-container">
-      <?php $imgBg = _getPostFeaturedImg(25); ?>
+      <?php $imgBg = _getPostFeaturedImg(HABITASSE_POST_ID); ?>
       <div class="habitasse bg-image" style="background-image: url('<?=$imgBg?>')">
-        <div class="habitasse-caption"><?=get_post(23)->post_title?></div>
+        <div class="habitasse-caption"><?=get_post(HABITASSE_POST_ID)->post_title?></div>
       </div>
     </div>
 
     <div class="container-fluid second-container">
       <div class="platform txtcenter">
-        <h2><?=get_cat_name(9)?></h2>
+        <h2><?=get_cat_name(PLATFORM_CATEGORY_ID)?></h2>
         <div class="row">
           <?php
-            $myposts = _getAllPostByCate(9);
+            $myposts = _getAllPostByCate(PLATFORM_CATEGORY_ID);
             foreach ($myposts as $post) {
               print "<div class=\"col-lg-4 col-md-4 col-sm4\">";
               print $post->post_content;
@@ -74,7 +74,7 @@
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-2"></div>
           <?php
-            $myposts = _getAllPostByCate(3);
+            $myposts = _getAllPostByCate(SOLUTION_CATEGORY_ID);
 
             foreach ($myposts as $key => $post) {
               if ($key % 2) {
@@ -96,7 +96,7 @@
 
     <div class="container-fluid second-container" style="background-color: #1a70a6;">
       <div class="havequestion">
-        <article><?=get_post(34)->post_content?></article>
+        <article><?=get_post(HAVEQUESTION_POST_ID)->post_content?></article>
       </div>
     </div>
 
@@ -105,8 +105,8 @@
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3"></div>
           <div class="col-lg-6 col-md-6 col-sm-6">
-            <h3><?=get_post(36)->post_title?></h3>
-            <article><?=get_post(36)->post_content?></article>
+            <h3><?=get_post(FACILISSIS_POST_ID)->post_title?></h3>
+            <article><?=get_post(FACILISSIS_POST_ID)->post_content?></article>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3"></div>
         </div>

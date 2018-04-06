@@ -15,13 +15,13 @@
   <div class="row" <?=(!is_page()) ? 'style="border: 1px solid #ccc;"' : ''?>>
     <?php
       if (!is_page()) {
-        $imgBg = _getPostFeaturedImg(1);
+        $imgBg = _getPostFeaturedImg(HOMEINTRO_POST_ID);
     ?>
       <div class="col-lg-6 col-md-6 col-sm-6 bg-background">
         <div class="bg-image"  style="background-image: url('<?=$imgBg?>')"></div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 bg-caption">
-        <?php $post = get_post(1); ?>
+        <?php $post = get_post(HOMEINTRO_POST_ID); ?>
         <div class="bg-caption-box">
           <h4><?=$post->post_title?></h4>
           <p class="bg-separate">&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -31,13 +31,21 @@
 
     <?php
       } else {
-        $pageImg  = get_post(106)->post_content;
-        $imgBg    = _getPostFeaturedImg(get_the_ID());
-        if ($imgBg) {
-          print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$imgBg}')\"></div>";
+        $customPage = get_post(get_the_ID());
+        if ($customPage) {
+          $imgBg    = _getPostFeaturedImg(get_the_ID());
+          $isVideo = $customPage->tag;
+        } else {
+          $pageImg  = get_post(PAGE_DEFAULT_BACKGROUND_ID)->post_content;
         }
+        if ($imgBg) {
+          print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$imgBg}')\">";
+          print "</div>";
+        } else {
+          print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$pageImg}')\"></div>";
+        }
+      }
     ?>
-    <?php } ?>
     <div class="clearfix"></div>
   </div>
 </div>
