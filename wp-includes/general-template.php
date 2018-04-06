@@ -152,6 +152,18 @@ function get_footer( $name = null ) {
 	locate_template( $templates, true );
 }
 
+function get_module($name) {
+  do_action( 'get_module', $name );
+
+  $templates = array();
+  $name = (string) $name;
+
+  $templates[] = "{$name}-module.php";
+
+  locate_template( $templates, true );
+}
+
+
 /**
  * Load sidebar template.
  *

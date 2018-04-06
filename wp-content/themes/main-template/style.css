@@ -175,6 +175,14 @@ h2 {
   color: #757575;
 }
 
+.platform img {
+  height: 130px;
+}
+
+.platform p {
+  height: 50px;
+}
+
 .solution img {
   width: 100%;
   height: 300px;
@@ -350,6 +358,33 @@ ul.cnss-social-icon {
 #primary #content-page .maps iframe {
   width: 100%;
   height: 450px;
+}
+
+#content-page-product {
+
+}
+
+.video {
+  padding: 0;
+}
+
+#content-page-product .product-bg {
+  position: relative;
+}
+
+#content-page-product .product-bg .product-bg-caption {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 30%;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.product-story h3 {
+  font-size: 36px;
+  color: #37474f;
 }
 
 /*END PAGE*/

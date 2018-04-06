@@ -33,14 +33,16 @@
       } else {
         $customPage = get_post(get_the_ID());
         if ($customPage) {
-          $imgBg    = _getPostFeaturedImg(get_the_ID());
-          $isVideo = $customPage->tag;
+          $customField = get_post_meta(get_the_ID());
+          $video = $customField['video'][0];
+          if (!$video) {
+            $pageImg = _getPostFeaturedImg(get_the_ID());
+          }
         } else {
           $pageImg  = get_post(PAGE_DEFAULT_BACKGROUND_ID)->post_content;
         }
-        if ($imgBg) {
-          print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$imgBg}')\">";
-          print "</div>";
+        if ($video) {
+          print "<div class='col-lg-12 col-md-12 col-sm-12 video'>{$video}</div>";
         } else {
           print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$pageImg}')\"></div>";
         }
