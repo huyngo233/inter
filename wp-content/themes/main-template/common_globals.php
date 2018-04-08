@@ -10,7 +10,7 @@
   const PAGE_DEFAULT_BACKGROUND_ID = 106;
 
   const CONTACT_PAGE_ID = 14;
-  const ABOUT_PAGE_ID = 0;
+  const ABOUT_PAGE_ID = 10;
   const PRODUCT_PAGE_ID = 2;
 
   const HOMEINTRO_POST_ID = 1;
@@ -32,3 +32,6 @@
   const PRODUCT_CATEGORY_ID = 11;
 
   const MAX_SITEMAP_NUMBER = 5;
+
+  const ABOUT_US_PAGE_BTN = 'Meet UNITY today';
+  const VIDEO_BTN_NAME = 'WATCH INTRO VIDEO';

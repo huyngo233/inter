@@ -38,13 +38,21 @@
           if (!$video) {
             $pageImg = _getPostFeaturedImg(get_the_ID());
           }
-        } else {
-          $pageImg  = get_post(PAGE_DEFAULT_BACKGROUND_ID)->post_content;
         }
+
+        if (!$video && !$pageImg) {
+          $pageImg  = _getPostFeaturedImg(PAGE_DEFAULT_BACKGROUND_ID);
+        }
+
         if ($video) {
-          print "<div class='col-lg-12 col-md-12 col-sm-12 video'>{$video}</div>";
+          $videoCaption = $customField['video'][1];
+          print "<div class='col-lg-12 col-md-12 col-sm-12 video player-box'>{$video}";
+          print $videoCaption ? "<div class='player-caption'>{$videoCaption}</div>" : "";
+          print "<div class='player-button'>" . VIDEO_BTN_NAME . " <i class=\"fa fa-play\" aria-hidden=\"true\"></i></div>";
+          print "</div>";
         } else {
           print "<div class=\"page-intro bg-image\" style=\"background-image: url('{$pageImg}')\"></div>";
+
         }
       }
     ?>

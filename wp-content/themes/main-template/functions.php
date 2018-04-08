@@ -264,6 +264,9 @@ function maintemplate_scripts() {
 	// bootstrap
 	wp_enqueue_style( 'maintemplate-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.0' );
 
+	// web- fonts
+	wp_enqueue_style( 'maintemplate-fonts', get_template_directory_uri() . '/css/font-styles.css', array(), '1.0' );
+
 	// Load our main stylesheet.
 	wp_enqueue_style( 'maintemplate-style', get_stylesheet_uri() );
 

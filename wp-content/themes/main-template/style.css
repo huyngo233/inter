@@ -2,7 +2,7 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: NunitoSans;
+  font-family: NunitoSans-Regular;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -368,6 +368,40 @@ ul.cnss-social-icon {
   padding: 0;
 }
 
+.ytp-large-play-button .ytp-button {
+  display: none;
+}
+
+.player-box {
+  position: relative;
+}
+
+.player-box .player-caption {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.player-box .player-button {
+  position: absolute;
+  padding: 15px 50px;
+  background-color: #ffffff;
+  color: #1a70a6;
+  top: 45%;
+  left: 42%;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.player-box .player-button:hover {
+  background-color: #1a70a6;
+  color: #FFFFFF;
+}
+
+
 #content-page-product .product-bg {
   position: relative;
 }
@@ -382,9 +416,55 @@ ul.cnss-social-icon {
   color: #ffffff;
 }
 
+#content-page #show-page article .entry-content h3 {
+  font-family: NunitoSans-Regular;
+  font-size: 36px;
+  text-align: center;
+  color: #545454;
+  margin-bottom: 40px;
+}
+
+#content-page #show-page article .entry-content p {
+  font-size: 16px;
+  text-align: left;
+  color: #545454;
+}
+
 .product-story h3 {
+  padding-left: 15px;
   font-size: 36px;
   color: #37474f;
+}
+
+.product-inf-right .feature .box-primary {
+  margin: 10px 0;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1a70a6;
+  color: #FFFFFF;
+}
+
+.product-inf-right p, .product-inf-left p {
+  margin: 0;
+}
+
+.product-inf-right .feature img {
+  padding-left: 15px;
+}
+
+.product-inf-right .feature span.new::after {
+  content: url("./img/28.png");
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.product-inf-left .pro-explaination, .product-inf-right .pro-explaination {
+  padding-left: 25px;
 }
 
 /*END PAGE*/
@@ -431,6 +511,10 @@ ul.cnss-social-icon {
   color: gray;
 }
 
+.mt80 {
+  margin-top: 80px;
+}
+
 .mt25 {
   margin-top: 25px;
 }
@@ -461,11 +545,4 @@ ul.cnss-social-icon {
 
 .pd60 {
   padding: 60px 0;
-}
-
-@font-face {
-  font-family: 'NunitoSans';
-  src: url('/webfonts/ProximaNovaA-Regular.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
 }
