@@ -185,7 +185,7 @@ h2 {
 
 .solution img {
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 
 .solution h4 {
@@ -450,6 +450,7 @@ ul.cnss-social-icon {
 
 .product-inf-right p, .product-inf-left p {
   margin: 0;
+  text-align: left;
 }
 
 .product-inf-right .feature img {
@@ -465,6 +466,34 @@ ul.cnss-social-icon {
 
 .product-inf-left .pro-explaination, .product-inf-right .pro-explaination {
   padding-left: 25px;
+}
+
+.product-inf-right img, .product-inf-left img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.product-inf-left > img, .product-inf-right > img {
+  position: relative;
+  left: 25%;
+}
+
+.enquiry-link {
+  text-align: center;
+  padding: 5px 60px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #1a70a6;
+}
+
+.product-inf-right h3, .product-inf-left h3 {
+  text-align: left;
+}
+
+.product-inf-right .icon, .product-inf-left .icon {
+  max-width: 40px;
 }
 
 /*END PAGE*/
@@ -519,6 +548,14 @@ ul.cnss-social-icon {
   margin-top: 25px;
 }
 
+.pr5 {
+  padding-right: 5px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
 .pr20 {
   padding-right: 20px;
 }
@@ -545,4 +582,8 @@ ul.cnss-social-icon {
 
 .pd60 {
   padding: 60px 0;
+}
+
+.nopadding {
+  padding: 0;
 }

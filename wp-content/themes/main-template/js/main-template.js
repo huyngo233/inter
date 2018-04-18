@@ -17,5 +17,11 @@ jQuery(function($) {
     return false;
   });
 
-
 });
+
+function moveToPage() {
+  var target = jQuery('#menu-item-18 > a');
+  var page = target.attr('href');
+
+  window.location.href = page;
+}
