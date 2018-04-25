@@ -266,6 +266,7 @@ function maintemplate_scripts() {
 
 	// web- fonts
 	wp_enqueue_style( 'maintemplate-fonts', get_template_directory_uri() . '/css/font-styles.css', array(), '1.0' );
+	wp_enqueue_style( 'maintemplate-fonts', get_template_directory_uri() . '/css/font-styles2.css', array(), '1.0' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'maintemplate-style', get_stylesheet_uri() );
@@ -432,6 +433,10 @@ add_filter('image_send_to_editor','switch_to_relative_url', 10, 8);
 add_filter('show_admin_bar','__return_false');
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+add_filter( 'auto_update_plugin', '__return_false' );
+add_filter( 'auto_update_theme', '__return_false' );
+
 function special_nav_class ($classes, $item) {
   if (in_array('current-menu-item', $classes) ){
     $classes[] = 'active ';

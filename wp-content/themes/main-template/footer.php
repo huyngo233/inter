@@ -36,31 +36,18 @@
           </div>
         </div>
         <div class="site-info row">
-          <div class="col-lg-1 col-md-1"></div>
-          <div class="col-lg-5 col-md-5">
-            <div class="footer-logo">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="footer-logo text-left">
               <a href="<?=get_home_url()?>">
                 <?=get_post(FOOTER_POST_ID)->post_content;?>
               </a>
-              <span><?=get_post(COPYRIGHT_POST_ID)->post_content;?></span>
             </div>
           </div>
-          <div class="col-lg-5 col-md-5">
-            <nav class="footer-navigation" role="navigation">
-              <?php
-                wp_nav_menu(array(
-                'menu_class'     => 'nav-menu',
-                'theme_location' => 'footer',
-              ));
-              ?>
-            </nav>
-            <?php
-              print do_shortcode(get_post(SOCIAL_POST_ID)->post_content);
-            ?>
+          <div class="col-lg-6 col-md-6 col-sm-6 text-right footer-logo-span">
+            <span class="hidden-xs"><?=get_post(COPYRIGHT_POST_ID)->post_content;?></span>
           </div>
-          <div class="col-lg-1 col-md-1"></div>
           <div class="clearfix"></div>
-        </div><!-- .site-info -->
+          </div><!-- .site-info -->
       </footer><!-- .site-footer -->
     </div>
   </body>

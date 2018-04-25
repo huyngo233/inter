@@ -2,7 +2,7 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: NunitoSans-Regular;
+  font-family: ProximaNovaA-Regular;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -130,6 +130,10 @@ h2 {
   text-align: center;
 }
 
+.vestibulum .product img {
+  height: 200px;
+}
+
 .donec {
   width: 50%;
   margin: 0 auto;
@@ -194,6 +198,10 @@ h2 {
   text-align: center;
 }
 
+.solution p {
+  color: #545454;
+}
+
 .havequestion {
   width: 50%;
   margin: 50px auto;
@@ -203,6 +211,20 @@ h2 {
   font-size: 36px;
   text-align: center;
   color: #ffffff;
+}
+
+.havequestion a {
+  text-transform: capitalize;
+  color: red;
+  font-weight: bold;
+  background-color: #ffffff;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.havequestion a:hover {
+  color: #FFFFFF;
+  background-color: #218838;
 }
 
 .facilisis h3 {
@@ -216,6 +238,22 @@ h2 {
   font-size: 16px;
   text-align: left;
   color: #545454;
+}
+
+.facilisis .find-more {
+  margin-top: 40px;
+}
+
+.facilisis .find-more a {
+  background-color: #FFFFFF;
+  color: red;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.facilisis .find-more a:hover {
+  color: #fff;
+  background-color: #218838;
 }
 
 /*FOOTER*/
@@ -255,6 +293,8 @@ h2 {
 
 .site-info {
   padding: 20px 0;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .footer-navigation ul {
@@ -417,7 +457,7 @@ ul.cnss-social-icon {
 }
 
 #content-page #show-page article .entry-content h3 {
-  font-family: NunitoSans-Regular;
+  font-family: ProximaNovaA-Regular;
   font-size: 36px;
   text-align: center;
   color: #545454;
@@ -586,4 +626,243 @@ ul.cnss-social-icon {
 
 .nopadding {
   padding: 0;
+}
+
+.displaynone {
+  display: none;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media screen and (max-width: 1750px) {
+  ul#menu-main-menu li a {
+    margin: 0px 10px;
+    padding: 5px 5px;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+  ul#menu-main-menu li a {
+    margin: 0px 7px;
+  }
+
+  .bg-caption-box {
+    width: 100%;
+    top: 20%;
+    left: 0;
+  }
+
+  .bg-caption-box h4 {
+    font-size: 25px;
+  }
+
+  .bg-caption-box .caption-explain {
+    font-size: 20px;
+  }
+
+  .solution iframe {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  #primary #content-page .contact-form input[type='text'],
+  #primary #content-page .contact-form input[type='email'],
+  #primary #content-page .contact-form input[type='tel'] {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main-footer .site-map {
+    display: none;
+  }
+
+  .wpcf7-form-control-wrap textarea {
+    max-width: 100%;
+  }
+
+  ul#menu-main-menu li a {
+    font-size: 10px;
+  }
+
+  .solution iframe {
+    height: 150px;
+  }
+
+}
+
+@media screen and (max-width: 1240px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #video-player {
+    height: 300px;
+  }
+
+  .player-button {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+  .platform input {
+    margin-top: 80px;
+  }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .bg-caption-box {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .platform p {
+    height: 70px;
+  }
+
+  .facilisis h3 {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo-site {
+    text-align: center;
+  }
+
+  .second-container {
+    padding: 20px 0;
+  }
+
+  .bg-caption-box {
+    position: inherit;
+    top: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .vestibulum .product {
+    margin-bottom: 10px;
+  }
+
+  .habitasse.bg-image {
+    height: 200px;
+  }
+
+  .bg-image {
+    background-size: contain;
+    height: 200px;
+  }
+
+  .donec {
+    width: 100%;
+  }
+
+  .habitasse-caption {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .platform p {
+    height: 70px;
+  }
+
+  .facilisis h3 {
+    font-size: 25px;
+  }
+
+  .footer-logo span {
+    font-size: 15px;
+  }
+
+  #menu-footer {
+    left: 10%;
+  }
+
+  .cnss-social-icon {
+    position: relative;
+    top: 55%;
+    right: 30%;
+  }
+
+  .havequestion {
+    width: 80%;
+  }
+
+  .havequestion article {
+    font-size: 25px;
+  }
+
+  .havequestion a {
+    font-size: 15px;
+  }
+
+  .product-inf-left > img, .product-inf-right > img {
+    left: 0;
+  }
+
+  .player-box .player-caption {
+    left: 10%;
+    font-size: 30px;
+  }
+
+  .player-box .player-button {
+    padding: 15px 30px;
+    top: 41%;
+    left: 25%;
+  }
+
+  .product-story h3 {
+    font-size: 25px;
+  }
+
+  .pd60 {
+    padding: 20px 0;
+  }
+
+  #content-page-product .product-bg .product-bg-caption {
+    top: 30%;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .product-inf-right {
+    margin-top: 20px;
+  }
+
+  .site-footer {
+    margin: 0;
+  }
+
+  #content-page #show-page article .entry-content h3 {
+    font-size: 25px;
+  }
+
+  .footer-logo-span {
+    text-align: left !important;
+  }
+
+  .solution iframe {
+    height: 200px;
+  }
+
+  .facilisis .find-more {
+    margin-top: 20px;
+  }
+
+
 }

@@ -37,6 +37,13 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** Disable all automatic WordPress updates. */
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+/** Change site url information. */
+//define('WP_HOME','http://oysterinteractive.com');
+//define('WP_SITEURL','http://oysterinteractive.com');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

@@ -14,13 +14,29 @@
   <?php get_mainmenu()?>
   <div class="row" <?=(!is_page()) ? 'style="border: 1px solid #ccc;"' : ''?>>
     <?php
+      $pId = !is_page() ? HOMEINTRO_POST_ID : get_the_ID();
+
+      $customPage = get_post($pId);
+      if ($customPage) {
+        $customField = get_post_meta($pId);
+        $video = $customField['video'][0];
+        if (!$video) {
+          $pageImg = _getPostFeaturedImg($pId);
+        }
+      }
+
       if (!is_page()) {
-        $imgBg = _getPostFeaturedImg(HOMEINTRO_POST_ID);
     ?>
       <div class="col-lg-6 col-md-6 col-sm-6 bg-background">
-        <div class="bg-image"  style="background-image: url('<?=$imgBg?>')"></div>
+        <?php
+          if ($video) {
+            print $video;
+          } else {
+            print "<div class=\"bg-image\"  style=\"background-image: url('{$pageImg}')\"></div>";
+          }
+        ?>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 bg-caption">
+      <div class="col-lg-6 col-md-6 col-sm-6 bg-caption hidden-xs-down">
         <?php $post = get_post(HOMEINTRO_POST_ID); ?>
         <div class="bg-caption-box">
           <h4><?=$post->post_title?></h4>
@@ -31,15 +47,6 @@
 
     <?php
       } else {
-        $customPage = get_post(get_the_ID());
-        if ($customPage) {
-          $customField = get_post_meta(get_the_ID());
-          $video = $customField['video'][0];
-          if (!$video) {
-            $pageImg = _getPostFeaturedImg(get_the_ID());
-          }
-        }
-
         if (!$video && !$pageImg) {
           $pageImg  = _getPostFeaturedImg(PAGE_DEFAULT_BACKGROUND_ID);
         }

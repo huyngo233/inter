@@ -75,7 +75,7 @@ if ($pageID == PRODUCT_PAGE_ID) {
           <?php the_content(); ?>
           <?php
             if ($pageID == ABOUT_PAGE_ID) {
-              print "<div class='txtcenter mt80'><button type='button' class='btn btn-info'>" . ABOUT_US_PAGE_BTN . "</button></div>";
+//              print "<div class='txtcenter mt80'><button type='button' class='btn btn-info'>" . ABOUT_US_PAGE_BTN . "</button></div>";
             }
 
           ?>

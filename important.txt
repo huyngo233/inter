@@ -1,2 +1,15 @@
 admin: ptXlpD4LZ15A9fdo&$
 
+user:unitydig_root
+
+pass: )Jf{?cKQhWym
+
+db2: oysterin_shelf
+
+user2: oysterin_root
+
+pass: (y^Ac[wQx(V4
+
+mail: admin@oysterinteractive.com
+pass mail: wpA4*h0w_srX
+
